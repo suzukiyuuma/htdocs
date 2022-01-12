@@ -19,7 +19,7 @@ Route::middleware(['middleware' => 'api'])->group(function () {
     # 投稿一覧表示
     Route::get('/posts', 'PostController@index');
     # 投稿一覧表示
-    Route::get('/posts3', 'PostController@index2');
+    Route::get('/posts5', 'PostController@index2');
     # 投稿表示
     Route::get('/posts/{id}', 'PostController@show');
     # 投稿編集
