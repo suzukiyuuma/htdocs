@@ -29,7 +29,7 @@ class PostController extends Controller
     # テストAPI
     public function index2()
     {
-        return 'テストでーす';
+        return response()->json(['name' => '山田太郎', 'gender' => '男','mail' => 'yamada@test.com']);
     }
    
     # 投稿表示
