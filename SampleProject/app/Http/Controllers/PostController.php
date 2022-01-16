@@ -29,7 +29,12 @@ class PostController extends Controller
     # テストAPI
     public function index2()
     {
-        return response()->json(['name' => '山田太郎', 'gender' => '男','mail' => 'yamada@test.com']);
+        return response()->json(
+          ['name' => '山田太郎', 'gender' => '男','mail' => 'yamada@test.com'],
+          200,
+          [],
+          JSON_UNESCAPED_UNICODE
+        );
     }
    
     # 投稿表示

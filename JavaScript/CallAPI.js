@@ -6,7 +6,7 @@ $(document).on('click', '#posts5', function(){
         cache: 'no-cache'
     })
     .then(response => response.text())
-    .then(data => {  //3
+    .then(data => {
       console.log(data);
     });
 })
